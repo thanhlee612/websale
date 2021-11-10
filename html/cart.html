@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <header class="header1">
+        <a href="index.html" class="logo"><img src="image/images/Pdtnovo.png" width="100px"> </a>
+           <nav class="navbar">
+               <a href="index.html">home</a>
+               <a href="#features">features</a>
+               <a href="products.html">products</a>
+               <a href="#categories">categories</a>
+               <a href="#review">review</a>
+               <a href="#blogs">blogs</a>
+           </nav>
+           <div class="icons">
+               <div class="fas fa-bars" id="menu-btn"></div>
+               <div class="fas fa-search" id="search-btn"></div>
+               <div class="fas fa-shopping-cart" id="cart-btn"></div>
+               <div class="fas fa-user" id="login-btn"></div>
+           </div>
+           <form action="" class="search-form">
+               <input type="search" id="search-box" placeholder="search here...">
+               <label for="search-box" class="fas fa-search"></label>
+           </form>  
+           <div class="shopping-cart">
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-1.jpg" alt="">
+                   <div class="content">
+                       <h3>watermelon</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-4.jpg" alt="">
+                   <div class="content">
+                       <h3>onion</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-3.jpg" alt="">
+                   <div class="content">
+                       <h3>chicken</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="total"> total : $19.69/- </div>
+               <a href="#" class="btn">checkout</a>
+           </div>
+       
+           <form action="" class="login-form">
+               <h3>login now</h3>
+               <input type="email" placeholder="your email" class="box">
+               <input type="password" placeholder="your password" class="box">
+               <p>forget your password <a href="#">click here</a></p>
+               <p>don't have an account <a href="#">create now</a></p>
+               <input type="submit" value="login now" class="btn">
+           </form>
+       </header>
+   
+
+
+
+<!-- ------------------cart item detail---------------- -->
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Mobile Phone</p>
+                <div class="app-logo">
+                    <img src="image/images/play-store.png">
+                    <img src="image/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/images/Pdtnovo.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure
+                and Benefits of Sports Accessible to the Many.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">HotLine: 0123456789 - What the hell is that?</p>
+    </div>
+</div>
+
+<!--Js for menu-->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight ="0px";
+
+    function MenuToggle(){
+        if(MenuItems.style.maxHeight =="0px"){
+            MenuItems.style.maxHeight ="200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight ="0px"
+        }
+    }
+</script>
+
+<div class="uk-overflow-auto container">
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <thead>
+            <tr>
+                <th class="uk-table-shrink"></th>
+                <th class="uk-table-small sty"><h3>Tên sản phẩm</h3></th>
+                <th class="uk-width-small sty"><h3>Giá</h3></th>   
+                <th class="uk-table-shrink uk-text-small sty"><h3>Số lượng</h3></th>  
+                <th class="uk-table-shrink uk-text-small sty"><h3>Tổng cộng</h3></th>
+                <th class="uk-table-shrink uk-text-small sty"><h3></h3></th>  
+                
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tr>
+            <td class="uk-table-link">
+                <h3 class = "item-name"><strong>Thành tiền</strong></h3>
+            </td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate grand-total"><h3><strong>0đ</strong></h3></td>   
+            <td><button class="uk-button uk-button-danger btn" type="button">Thanh toán</button></td>
+        </tr>
+    </table>
+</div>  
+</body>
+</html>

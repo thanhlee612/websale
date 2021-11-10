@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <header class="header1">
+        <a href="index.html" class="logo"><img src="image/images/Pdtnovo.png" width="100px"> </a>
+           <nav class="navbar">
+               <a href="index.html">home</a>
+               <a href="#features">features</a>
+               <a href="products.html">products</a>
+               <a href="#categories">categories</a>
+               <a href="#review">review</a>
+               <a href="./cart.html">blogs</a>
+           </nav>
+           <div class="icons">
+               <div class="fas fa-bars" id="menu-btn"></div>
+               <div class="fas fa-search" id="search-btn"></div>
+               <div class="fas fa-shopping-cart" id="cart-btn"></div>
+               <div class="fas fa-user" id="login-btn"></div>
+           </div>
+           <form action="" class="search-form">
+               <input type="search" id="search-box" placeholder="search here...">
+               <label for="search-box" class="fas fa-search"></label>
+           </form>  
+           <div class="shopping-cart">
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-1.jpg" alt="">
+                   <div class="content">
+                       <h3>watermelon</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-4.jpg" alt="">
+                   <div class="content">
+                       <h3>onion</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="box">
+                   <i class="fas fa-trash"></i>
+                   <img src="image/images/buy-3.jpg" alt="">
+                   <div class="content">
+                       <h3>chicken</h3>
+                       <span class="price">$4.99/-</span>
+                       <span class="quantity">qty : 1</span>
+                   </div>
+               </div>
+               <div class="total"> total : $19.69/- </div>
+               <a href="#" class="btn">checkout</a>
+           </div>
+       
+           <form action="" class="login-form">
+               <h3>login now</h3>
+               <input type="email" placeholder="your email" class="box">
+               <input type="password" placeholder="your password" class="box">
+               <p>forget your password <a href="#">click here</a></p>
+               <p>don't have an account <a href="#">create now</a></p>
+               <input type="submit" value="login now" class="btn">
+           </form>
+       
+       </header>
+  
+    <section class="home" id="home">
+        
+        <div class="content">      
+            <div class="small-container">
+                <div class="row row-2">
+                    <h2>Tất cả sản phẩm</h2>
+                    <select>
+                        <option>Sắp xến theo</option>
+                        <option>Giá</option>
+                        <option>Phổ biến</option>
+                        <option>Đánh giá</option>
+                    </select>
+                </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp01').style.display='block'"><img src="image/images/product-1.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp02').style.display='block'"><img src="image/images/product-2.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp03').style.display='block'"><img src="image/images/product-3.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp04').style.display='block'"><img src="image/images/product-4.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp05').style.display='block'"><img src="image/images/product-1.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp06').style.display='block'"><img src="image/images/product-2.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp07').style.display='block'"><img src="image/images/product-3.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <a onclick="document.getElementById('sp08').style.display='block'"><img src="image/images/product-4.jpg"></a>
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                    </div>
+                    <!--WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW-->
+                    <h2 class="title">Sản phảm nổi bật</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="image/images/product-5.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-6.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-7.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-8.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="image/images/product-9.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-10.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-11.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/images/product-12.jpg">
+                            <h4>Red Printed Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>200.000đ</p>
+                        </div>
+                    </div>
+                    <!-- <div class="page-btn">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>&#8594;</span>
+                    </div> -->
+                </div>              
+            </div>
+           
+        </section> 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Mobile Phone</p>
+                <div class="app-logo">
+                    <img src="image/images/play-store.png">
+                    <img src="image/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/images/Pdtnovo.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure
+                and Benefits of Sports Accessible to the Many.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">HotLine: 0123456789 - What the hell is that?</p>
+    </div>
+</div>
+
+
+
+<!--Js for menu-->
+
+<script>
+
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight ="0px";
+
+    function MenuToggle(){
+        if(MenuItems.style.maxHeight =="0px"){
+            MenuItems.style.maxHeight ="200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight ="0px"
+        }
+    }
+</script>
+
+
+
+      <!-- -------------------------CHI TIET SAN PHAM-------------- -->
+
+      <div id="sp01" class="modal">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <a onclick="document.getElementById('sp01').style.display='none'" class="btn-close"><i class="fas fa-times-circle"></i></a> 
+                    <img src="./image/images/gallery-1.jpg" id="ProductImg"  class="card-img-top" width="100%">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-1.jpg" class="small-img" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-2.jpg" class="small-img" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-3.jpg" class="small-img" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-4.jpg" class="small-img" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home | T-Shirt</p>
+                    <h1>Red Print T-Shirt by HRX</h1>
+                    <h2>200000</h2>
+                    <select>
+                        <option>Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number" value="1" max="10" min="1">
+                   <button href="" class="btn btn-primary">Thêm vào giỏ hàng</button>
+        
+                    <h3>Chi tiết sản phẩm  <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(()=>{
+                $('.small-img-row img').click(function(){
+                    let imgPath=$(this).attr('src');
+                    $('#ProductImg').attr('src', imgPath);
+                })
+            })
+        </script>
+        </div>
+
+        
+        <div id="sp02" class="modal">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <a onclick="document.getElementById('sp02').style.display='none'" class="btn-close"><i class="fas fa-times-circle"></i></a>
+                    <img src="./image/images/gallery-1.jpg" id="ProductImg2"  class="card-img-top" width="100%">
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img src="image/images/gallery-1.jpg" class="small-img2" width="100%">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="image/images/buy-2.jpg" class="small-img2" width="100%">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="image/images/gallery-3.jpg" class="small-img2" width="100%">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="image/images/buy-2.jpg" class="small-img2" width="100%">
+                            </div>                 
+                        </div>
+                    </div>
+        
+                <div class="col-2">
+                    <p>Home | T-Shirt</p>
+                    <h1>Red Print T-Shirt by HRX</h1>
+                    <h2>200000</h2>
+                    <select>
+                        <option>Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number" value="1" max="10" min="1">
+                    <button href="" class="btn btn-primary">Thêm vào giỏ hàng</button>
+        
+                    <h3>Chi tiết sản phẩm  <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(()=>{
+                $('.small-img-row img').click(function(){
+                    let imgPath=$(this).attr('src');
+                    $('#ProductImg2').attr('src', imgPath);
+                })
+            })
+        </script>
+        </div>
+        
+        <div id="sp03" class="modal">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <a onclick="document.getElementById('sp03').style.display='none'" class="btn-close"><i class="fas fa-times-circle"></i></a>
+                    <img src="./image/images/buy-3.jpg" id="ProductImg3"  class="card-img-top" width="100%">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="image/images/buy-3.jpg" class="small-img3" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/buy-2.jpg" class="small-img3" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-3.jpg" class="small-img3" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/buy-2.jpg" class="small-img3" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h2>Home | T-Shirt</h2>
+                    <h1>Red Print T-Shirt by HRX</h1>
+                    <h2>200000</h2>
+                    <select>
+                        <option>Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number" value="1" max="10" min="1">
+                   <button href="" class="btn btn-primary">Thêm vào giỏ hàng</button>
+        
+                    <h3>Chi tiết sản phẩm  <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(()=>{
+                $('.small-img-row img').click(function(){
+                    let imgPath=$(this).attr('src');
+                    $('#ProductImg3').attr('src', imgPath);
+                })
+            })
+        </script>
+        </div>
+        
+        <div id="sp04" class="modal">
+        <div class="small-container single-product" id='sp04'>
+            <div class="row">
+                <div class="col-2">
+                    <a onclick="document.getElementById('sp04').style.display='none'" class="btn-close"><i class="fas fa-times-circle"></i></a>
+                    <img src="./image/images/buy-1.jpg" id="ProductImg4"  class="card-img-top" width="100%">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="image/images/buy-2.jpg" class="small-img4" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/buy-3.jpg" class="small-img4" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/gallery-3.jpg" class="small-img4" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="image/images/buy-2.jpg" class="small-img4" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h2>Home | T-Shirt</h2>
+                    <h1>Red Print T-Shirt by HRX</h1>
+                    <h2>200000</h2>
+                    <select>
+                        <option>Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number" value="1" max="10" min="1">
+                   <button href="" class="btn btn-primary">Thêm vào giỏ hàng</button>
+        
+                    <h3>Chi tiết sản phẩm  <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(()=>{
+                $('.small-img-row img').click(function(){
+                    let imgPath=$(this).attr('src');
+                    $('#ProductImg4').attr('src', imgPath);
+                })
+            })
+        </script>
+        </div>
+        
+        <div id="sp05" class="modal">
+        <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <a onclick="document.getElementById('sp05').style.display='none'" class="btn-close"><i class="fas fa-times-circle"></i></a>
+                <img src="./image/images/buy-3.jpg" id="ProductImg5" class="card-img-top" width="100%">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/images/headerptd.png" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/images/buy-2.jpg" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/images/gallery-3.jpg" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/images/buy-2.jpg" class="small-img" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>Home | T-Shirt</h2>
+                <h1>Red Print T-Shirt by HRX</h1>
+                <h2>200000</h2>
+                <select>
+                    <option>Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" class="num" value="1" max="10" min="1">
+                <a href="./cart.html" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                <h3>Chi tiết sản phẩm  <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever</p>
+            </div>
+        </div>
+        </div>
+        <script>
+        $(()=>{
+            $('.small-img-row img').click(function(){
+                let imgPath=$(this).attr('src');
+                $('#ProductImg5').attr('src', imgPath);
+            })
+        })
+        </script>
+        </div>
+        
+        <!-- --------------------------------------------------- -->
+        <!--footer-->
+
+<!-- <script src="products.js"></script> -->
+   
+<!-- <div class="uk-overflow-auto container">
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <thead>
+            <tr>
+                <th class="uk-table-shrink"></th>
+                <th class="uk-table-small sty"><h3>Tên sản phẩm</h3></th>
+                <th class="uk-width-small sty"><h3>Giá</h3></th>   
+                <th class="uk-table-shrink uk-text-small sty"><h3>Số lượng</h3></th>  
+                <th class="uk-table-shrink uk-text-small sty"><h3>Tổng cộng</h3></th>
+                <th class="uk-table-shrink uk-text-small sty"><h3></h3></th>  
+                
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tr>
+            <td class="uk-table-link">
+                <h3 class = "item-name"><strong>Thành tiền</strong></h3>
+            </td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate"><h3></h3></td>
+            <td class="uk-text-truncate grand-total"><h3><strong>0đ</strong></h3></td>   
+            <td><button class="uk-button uk-button-danger btn" type="button">Thanh toán</button></td>
+        </tr>
+    </table>
+</div> -->
+</body>
+</html>
