@@ -95,13 +95,13 @@ p {
     width: 100%;
 }
 .small-container {
-    max-width: 1080px;
+    max-width: 1000px;
     margin: 100px auto;
     padding-left: 25px;
     padding-right: 25px;
 }
 .offer .single-product {
-    max-width: 1080px;
+    max-width: 1000px;
     margin: 150px auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -114,7 +114,7 @@ p {
     transition: transform 0.5s;
 }
 .col-4 img {
-    width: 100%;
+    width: 106%;
 }
 .title {
     text-align: center;
